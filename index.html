@@ -2,90 +2,183 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <title>Gold n Bond | تجاليد كلادينج</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gold n Bond - تجاليد كلادينج</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: url('header.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      padding: 60px 20px;
       text-align: center;
     }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 20px;
-      font-size: 24px;
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
     }
+
+    section p {
+      font-size: 18px;
+      color: #555;
+      max-width: 800px;
+      margin: auto;
+    }
+
     .gallery {
+      margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
-      padding: 20px;
+      gap: 20px;
     }
+
     .gallery img {
       width: 300px;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
+
     footer {
-      padding: 20px;
-      background: #eee;
-    }
-    .button-group a {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 5px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 18px;
+      background-color: #222;
       color: white;
+      text-align: center;
+      padding: 40px 20px;
     }
-    .facebook {
-      background-color: #1877f2;
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
     }
-    .facebook:hover {
-      background-color: #145dbf;
-    }
-    .whatsapp {
-      background-color: #25d366;
-    }
-    .whatsapp:hover {
-      background-color: #1da851;
-    }
-    .call {
-      background-color: #555;
-    }
-    .call:hover {
-      background-color: #333;
+
+    .facebook { background-color: #1877f2; }
+    .whatsapp { background-color: #25d366; }
+    .call { background-color: #555; }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 32px; }
+      header p { font-size: 16px; }
+      nav ul { flex-direction: column; }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    Gold n Bond - تجاليد كلادينج<br>
-    خدمة تركيب تجاليد الكلادينج للدعاية والديكور<br>
-    واتساب: 01228820393
-  </header>
+<nav>
+  <ul>
+    <li><a href="#services">الخدمات</a></li>
+    <li><a href="#about">من نحن</a></li>
+    <li><a href="#gallery">المعرض</a></li>
+    <li><a href="#contact">تواصل معنا</a></li>
+  </ul>
+</nav>
 
+<header>
+  <h1>Gold n Bond</h1>
+  <p>متخصصون في تركيب تجاليد الكلادينج للدعاية والديكور</p>
+</header>
+
+<section id="services">
+  <h2>خدماتنا</h2>
+  <p>نقدم خدمات تصميم وتركيب الكلادينج باحترافية وجودة عالية، باستخدام أفضل الخامات.</p>
+</section>
+
+<section id="about" style="background-color: #fff;">
+  <h2>من نحن</h2>
+  <p>Gold n Bond هي شركة رائدة في مجال تجاليد الواجهات والديكورات الخارجية، نمتلك فريق متخصص يتميز بالدقة والاحترافية.</p>
+</section>
+
+<section id="gallery">
+  <h2>معرض الأعمال</h2>
   <div class="gallery">
-    <img src="PicsArt_09-04-08.57.14.jpg" alt="صورة 1">
-    <img src="PicsArt_07-17-10.15.10.jpg" alt="صورة 2">
-    <img src="PicsArt_07-17-10.13.29.jpg" alt="صورة 3">
-    <img src="PicsArt_07-16-09.59.43.jpg" alt="صورة 4">
-    <img src="PicsArt_07-16-10.09.00.jpg" alt="صورة 5">
+    <img src="PicsArt_09-04-08.57.14.jpg" alt="img1">
+    <img src="PicsArt_07-17-10.15.10.jpg" alt="img2">
+    <img src="PicsArt_07-17-10.13.29.jpg" alt="img3">
+    <img src="PicsArt_07-16-09.59.43.jpg" alt="img4">
+    <img src="PicsArt_07-16-10.09.00.jpg" alt="img5">
   </div>
+</section>
 
-  <footer>
-    <div class="button-group">
-      <a class="facebook" href="https://www.facebook.com/GoldnBond" target="_blank">صفحتنا على فيسبوك</a>
-      <a class="whatsapp" href="https://wa.me/201228820393" target="_blank">راسلنا على واتساب</a>
-      <a class="call" href="tel:01228820393">اتصل بنا</a>
-    </div>
-  </footer>
+<section id="contact" style="background-color: #fff;">
+  <h2>تواصل معنا</h2>
+  <p>يمكنك التواصل معنا من خلال الأزرار التالية أو زيارة صفحتنا على فيسبوك.</p>
+</section>
+
+<footer>
+  <div class="buttons">
+    <a class="facebook" href="https://www.facebook.com/GoldnBond" target="_blank">فيسبوك</a>
+    <a class="whatsapp" href="https://wa.me/201228820393" target="_blank">واتساب</a>
+    <a class="call" href="tel:01228820393">اتصل بنا</a>
+  </div>
+  <p style="margin-top: 20px;">جميع الحقوق محفوظة &copy; Gold n Bond</p>
+</footer>
 
 </body>
 </html>
