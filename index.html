@@ -38,9 +38,8 @@
     }
 
     header h1 {
-      font-size: 60px;
+      font-size: 48px;
       margin-bottom: 10px;
-      color: #FFD700;
       animation: slideDown 1s ease-out;
     }
 
@@ -60,6 +59,15 @@
       top: 0;
       width: 100%;
       z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 40px;
+      border-radius: 6px;
     }
 
     nav ul {
@@ -173,7 +181,16 @@
     .call { background-color: #555; }
 
     @media (max-width: 768px) {
-      header h1 { font-size: 36px; }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        margin-bottom: 10px;
+      }
+
+      header h1 { font-size: 32px; }
       header p { font-size: 16px; }
       nav ul { flex-direction: column; }
       .gallery img { width: 90%; }
@@ -183,31 +200,34 @@
 <body>
 
 <nav>
+  <div class="logo">
+    <img src="FB_IMG_1744390070024.jpg" alt="Gold n Bond Logo">
+  </div>
   <ul>
-    <li><a href="#services">الخدمات / Services</a></li>
-    <li><a href="#about">من نحن / About</a></li>
-    <li><a href="#gallery">المعرض / Gallery</a></li>
-    <li><a href="#contact">تواصل معنا / Contact</a></li>
+    <li><a href="#services">الخدمات</a></li>
+    <li><a href="#about">من نحن</a></li>
+    <li><a href="#gallery">المعرض</a></li>
+    <li><a href="#contact">تواصل معنا</a></li>
   </ul>
 </nav>
 
 <header>
   <h1>Gold n Bond</h1>
-  <p>متخصصون في تركيب تجاليد الكلادينج للدعاية والديكور<br>Experts in cladding installation for signage and decoration</p>
+  <p>متخصصون في تركيب تجاليد الكلادينج للدعاية والديكور</p>
 </header>
 
 <section id="services">
-  <h2>خدماتنا / Our Services</h2>
-  <p>نقدم خدمات تصميم وتركيب الكلادينج باحترافية وجودة عالية، باستخدام أفضل الخامات.<br>We offer professional cladding design and installation using the best materials.</p>
+  <h2>خدماتنا</h2>
+  <p>نقدم خدمات تصميم وتركيب الكلادينج باحترافية وجودة عالية، باستخدام أفضل الخامات.</p>
 </section>
 
 <section id="about" style="background-color: #fff;">
-  <h2>من نحن / About Us</h2>
-  <p>Gold n Bond هي شركة رائدة في مجال تجاليد الواجهات والديكورات الخارجية، نمتلك فريق متخصص يتميز بالدقة والاحترافية.<br>Gold n Bond is a leading company in façade and outdoor decoration cladding, with a highly skilled and professional team.</p>
+  <h2>من نحن</h2>
+  <p>Gold n Bond هي شركة رائدة في مجال تجاليد الواجهات والديكورات الخارجية، نمتلك فريق متخصص يتميز بالدقة والاحترافية.</p>
 </section>
 
 <section id="gallery">
-  <h2>معرض الأعمال / Work Gallery</h2>
+  <h2>معرض الأعمال</h2>
   <div class="gallery">
     <img src="PicsArt_09-04-08.57.14.jpg" alt="img1">
     <img src="PicsArt_07-17-10.15.10.jpg" alt="img2">
@@ -218,23 +238,23 @@
 </section>
 
 <section id="contact" style="background-color: #fff;">
-  <h2>تواصل معنا / Contact Us</h2>
-  <p>يمكنك إرسال رسالة مباشرة من خلال النموذج التالي:<br>You can send us a message using the form below:</p>
+  <h2>تواصل معنا</h2>
+  <p>يمكنك إرسال رسالة مباشرة من خلال النموذج التالي:</p>
   <div class="contact-form">
     <form>
-      <input type="text" placeholder="الاسم / Name" required>
-      <input type="email" placeholder="البريد الإلكتروني / Email" required>
-      <textarea rows="4" placeholder="رسالتك / Your Message" required></textarea>
-      <button type="submit">إرسال / Send</button>
+      <input type="text" placeholder="الاسم" required>
+      <input type="email" placeholder="البريد الإلكتروني" required>
+      <textarea rows="4" placeholder="رسالتك" required></textarea>
+      <button type="submit">إرسال</button>
     </form>
   </div>
 </section>
 
 <footer>
   <div class="buttons">
-    <a class="facebook" href="https://www.facebook.com/GoldnBond" target="_blank">فيسبوك / Facebook</a>
-    <a class="whatsapp" href="https://wa.me/201228820393" target="_blank">واتساب / WhatsApp</a>
-    <a class="call" href="tel:01228820393">اتصل بنا / Call Us</a>
+    <a class="facebook" href="https://www.facebook.com/GoldnBond" target="_blank">فيسبوك</a>
+    <a class="whatsapp" href="https://wa.me/201228820393" target="_blank">واتساب</a>
+    <a class="call" href="tel:01228820393">اتصل بنا</a>
   </div>
   <p style="margin-top: 20px;">جميع الحقوق محفوظة &copy; Gold n Bond</p>
 </footer>
